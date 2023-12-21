@@ -1,0 +1,138 @@
+/* Дополнительные стили для страницы Корзина */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  text-align: center;
+  background-color: #780000;
+  padding: 50px 0;
+  color: #fdf0d5;
+  font-family: 'Roboto', sans-serif;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+.cart-items {
+  padding: 20px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+  
+  background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    /* width: 50px; */
+}
+
+.item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.item-actions input {
+  width: 60px;
+  padding: 8px;
+  text-align: center;
+}
+
+.item-actions button {
+  margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item-actions button:hover {
+  background-color: #e60000;
+}
+
+.total {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.total p {
+  font-weight: bold;
+}
+
+.total button {
+  margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.total button:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для навигационного меню */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.main-nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding: 8px 15px;
+  border: 2px solid #fff; /* Добавление рамки */
+  border-radius: 5px; /* Скругление углов */
+  transition: all 0.3s ease; /* Плавный переход при наведении */
+}
+
+.main-nav ul li a:hover {
+  background-color: #fff; /* Изменение цвета фона при наведении */
+  color: #333; /* Изменение цвета текста при наведении */
+}

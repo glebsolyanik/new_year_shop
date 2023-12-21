@@ -1,0 +1,116 @@
+/* Стили для основной разметки страницы */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #780000;
+    padding: 50px 0;
+    color: #fdf0d5;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .product {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .product h2 {
+    margin-top: 0;
+  }
+  
+  .product p {
+    color: #666;
+  }
+
+  .product button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .product button:hover {
+    background-color: #e60000;
+  }
+  
+  .price {
+    color: #333;
+    font-weight: bold;
+  }
+  
+/* Стили для навигационного меню */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .main-nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 15px;
+    border: 2px solid #fff; /* Добавление рамки */
+    border-radius: 5px; /* Скругление углов */
+    transition: all 0.3s ease; /* Плавный переход при наведении */
+  }
+  
+  .main-nav ul li a:hover {
+    background-color: #fff; /* Изменение цвета фона при наведении */
+    color: #333; /* Изменение цвета текста при наведении */
+  }
+  
+  

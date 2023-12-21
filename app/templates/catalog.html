@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Каталог товаров</title>
+  <link rel="stylesheet" href="../static/css/catalog_style.css">
+</head>
+<body>
+  <header>
+    <h1>Каталог товаров</h1>
+    <nav class="main-nav">
+        <ul>
+          <li><a href="/">Главная</a></li>
+          <li><a href="/catalog">Каталог</a></li>
+          <li><a href="/basket">Корзина</a></li>
+          <li><a href="/about">О нас</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="products">
+      {% for item in data %}
+      <form action="/add_to_basket" method="post">
+        <input type="hidden" name="item_name" value="{{ item[1] }}">
+        <article class="product">
+            <img src="{{ item[4] }}" alt="{{ item[1] }}">
+            <h3>{{ item[1] }}</h3>
+            <p>{{ item[2] }}</p>
+            <span class="price">{{ item[3] }}р</span>
+            <button type="submit">Добавить в корзину</button>
+        </article>
+      </form>
+      {% endfor %}
+    </section>
+  </main>
+</body>
+</html>

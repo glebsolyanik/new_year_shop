@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Новогодняя доставка подарков</title>
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+  <header class="main-header">
+    <h1>Доставка новогодних подарков</h1>
+    <nav class="main-nav">
+        <ul>
+          <li><a href="/">Главная</a></li>
+          <li><a href="/catalog">Каталог</a></li>
+          <li><a href="/basket">Корзина</a></li>
+          <li><a href="/about">О нас</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <section class="gift-options">
+    <h2>Часто заказывают:</h2>
+    {% for item in data %}
+    <div class="gift-card">
+      <img src="{{ item[4] }}" alt="{{ item[1] }}">
+      <h3>{{ item[1] }}</h3>
+      <p>{{ item[2] }}</p>
+      <button>Заказать</button>
+    </div>
+    {% endfor %}
+  </section>
+
+</body>
+</html>

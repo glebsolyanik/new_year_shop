@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Изменение шрифта для всего текста на странице */
+    padding: 0;
+    margin: 0;
+  }
+/* Стили для главного заголовка */
+.main-header {
+    text-align: center;
+    background-color: #780000;
+    padding: 50px 0;
+    color: #fdf0d5;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Стили для блока выбора подарков */
+  .gift-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+  }
+  
+  .gift-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .gift-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .gift-card h3 {
+    margin-top: 15px;
+  }
+  
+  .gift-card p {
+    color: #666;
+  }
+  
+  .gift-card button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .gift-card button:hover {
+    background-color: #e60000;
+  }
+  
+  /* Стили для подвала */
+
+  
+/* Стили для навигационного меню */
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .main-nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .main-nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 8px 15px;
+    border: 2px solid #fff; /* Добавление рамки */
+    border-radius: 5px; /* Скругление углов */
+    transition: all 0.3s ease; /* Плавный переход при наведении */
+  }
+  
+  .main-nav ul li a:hover {
+    background-color: #fff; /* Изменение цвета фона при наведении */
+    color: #333; /* Изменение цвета текста при наведении */
+  }
+
+  

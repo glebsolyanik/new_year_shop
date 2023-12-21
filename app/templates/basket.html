@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Корзина</title>
+  <link rel="stylesheet" href="../static/css/basket_style.css">
+</head>
+<body>
+  <header>
+    <h1>Корзина</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/catalog">Каталог</a></li>
+        <li><a href="/basket">Корзина</a></li>
+        <li><a href="/about">О нас</a></li>
+      </ul>
+  </nav>
+  </header>
+
+  <main>
+    <section class="cart-items">
+      <h2>Ваша корзина</h2>
+      <div class="item">
+          {% for item in presents_data %}
+          <form action="/delete_from_basket" method="post">
+              <div class="item-details">
+                  <img src="{{ item[4] }}" alt="{{ item[1] }}">
+                  <h3>{{ item[1] }}</h3>
+                  <p>Цена: {{ item[3] }}р</p>
+              </div>
+              <div class="item-actions">
+                  <input type="hidden" name="item_name" value="{{ item[1] }}">
+                  <button type="submit">Удалить</button>
+              </div>
+          </form>
+          {% endfor %}
+      </div>
+
+      
+      <form action="/delete_all" method="POST">
+        <div class="total">
+            <p>Общая сумма: {{ total }}р</p>
+            <button type="submit">Оформить заказ</button>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
